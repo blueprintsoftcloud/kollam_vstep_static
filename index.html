@@ -90,7 +90,7 @@
         <!-- Action Buttons -->
         <div class="hidden md:flex items-center">
           <button
-            href="https://app.vstepconsultancy.com"
+            id="loginBtn"
             class="px-6 py-2 bg-slate-900 text-white text-[14px] font-bold rounded-lg hover:bg-black transition-all shadow-sm active:scale-95"
           >
             Login
@@ -126,7 +126,7 @@
           >
 
           <a
-            href="https://app.vstepconsultancy.com"
+            id="loginBtn"
             class="w-full inline-block text-center px-6 py-2 bg-slate-900 text-white text-[14px] font-bold rounded-lg hover:bg-black transition-all shadow-sm active:scale-95"
           >
             Login
@@ -1584,6 +1584,10 @@
           }
         });
       });
+
+      document.getElementById("loginBtn").onclick = () => {
+        window.location.href = "https://app.vstepconsultancy.com";
+      };
     </script>
   </body>
 </html>
